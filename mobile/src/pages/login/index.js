@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
-import { useNavigation, useRoute } from "@react-navigation/native";
-import styles from './styles'
+import { useNavigation } from "@react-navigation/native";
+import styles from './styles';
 import logo from "../../assets/logo.png";
 //import AsyncStorage from '@react-native-community/async-storage';
 import { AsyncStorage } from 'react-native';
+import api from '../../service/api';
 
 export default function Login() {
     const [email, setEmail] = useState('');
